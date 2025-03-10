@@ -1,0 +1,167 @@
+.fondo-general{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  /* <!-- contiene todas las cajas  --> */
+  .contenedor-general{
+    width: 98%;
+    height: 100%;
+  }
+  /* <!-- franja amarilla de arriba --> */
+  .contenedor-superior{
+    background-color:  rgb(255, 196, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 20%;
+  
+  }
+  /* <!-- nombre del portal --> */
+  .logo{
+    font-family: 'Shrikhand', cursive;
+    font-size: 450%;
+  }
+  /* <!-- formulario --> */
+.formulario{
+  align-self: center;
+}
+  /* <!-- link para ingresar --> */
+  .ingresar {
+    font-size: 110%;
+   text-decoration: underline;
+   color: inherit;
+  }
+
+  .usuario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ubication{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* <!-- logo de star wars --> */
+  
+  .logo-star{
+    display: inline-flex;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+
+  }
+  
+  /* <!-- flexbox de 3 columnas por 3 filas --> */
+  .contenedor-peli{
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    width: 70%;
+    height: auto;
+   
+  }
+  
+  /* <!-- las 9 películas --> */
+  .pelicula{
+    cursor: pointer;
+    color: white;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+    flex: 0 1 calc(33.33% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    align-content: center;
+  }
+
+   /* imagenes peliculas */
+   .img{
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  /* efecto al posicionar el cursor */
+  .pelicula:hover{
+  transform:scale(1.2);
+  
+  
+  }
+  /* efecto al hacer clic */
+  .pelicula:active{
+    background-color: rgb(255, 196, 0);
+  
+  }
+  /* <!-- franja gris de abajo --> */
+  .contenedor-inferior{
+    background-color: rgb(141, 140, 140);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    width: 100%;
+    height: 250px;
+    margin: 50px 0;
+    
+  }
+
+  .text-club{
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+
+  /* <!-- cuenta en las redes --> */
+  .seguir{
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .material-symbols-outlined{
+   margin: 10px 100px;
+  }
+  
+  .redes{
+    font-family: 'Shrikhand', cursive;
+    font-size: 250%;
+  }
+
+   /* <!-- promocion--> */
+   .promocion{
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    width: 10%;
+  }
+
+  .promo{
+    width: auto;
+    height: auto;
+  }
+
+  .text-promo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  @media (max-width:480px){
+    .pelicula img{
+      width: 25vw;
+    }
+  }
